@@ -1,0 +1,18 @@
+{
+  "name": "e2etests",
+  "version": "1.0.0",
+  "description": "e2e test for levis.com usa",
+  "main": "index.js",
+  "dependencies": {
+    "nightwatch": "^0.9.12",
+    "selenium-standalone": "^5.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "e2e-setup": "./node_modules/selenium-standalone/bin/selenium-standalone install",
+    "launch-chrome-driver": "./node_modules/selenium-standalone/bin/selenium-standalone start --drivers.chrome",
+    "e2e": "node ./node_modules/nightwatch/bin/nightwatch"
+  },
+  "author": "",
+  "license": "ISC"
+}
