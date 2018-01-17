@@ -1,11 +1,11 @@
 /*
   The method below runs the assertions for the e2e home page test.
   Each assertion uses css selectors and proprietary nightwatch states
-  Read the docs at nightwatchjs.org
+  Read the docs at nightwatchjs.org.
 */
 
 module.exports = {
-  'Home Page' : function (browser) {
+  'Home Page': function(browser) {
     browser
       .url('http://www.google.com')
       .waitForElementVisible('#body')
@@ -17,7 +17,10 @@ module.exports = {
       .assert.visible('.sbsb_b')
       .click('.sbsb_c.gsfs:first-child')
       .pause(2000)
-      .assert.containsText('h3.r:first-child','Nightwatch.js | Node.js powered End-to-End testing framework')
+      .assert.containsText(
+        'h3.r:first-child',
+        'Nightwatch.js | Node.js powered End-to-End testing framework'
+      )
       .end();
   }
 };
