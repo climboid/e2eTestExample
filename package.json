@@ -4,7 +4,7 @@
   "description": "e2e test for levis.com usa",
   "main": "index.js",
   "dependencies": {
-    "nightwatch": "^0.9.12",
+    "nightwatch": "^2.6.9",
     "selenium-standalone": "^5.5.0"
   },
   "devDependencies": {},
